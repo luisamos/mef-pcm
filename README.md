@@ -8,8 +8,10 @@ Instrucciones:
 
 3. Instalar las depedencias en el entorno virtual:
    pip install -r requirements.txt
+4. Ejecutar playwright:
+   playwright install
 
-4. Ejecutar el archivo SQL en la base de datos PostgreSQL:
+5. Ejecutar el archivo SQL en la base de datos PostgreSQL:
    (Windows)
    psql -d mef -U postgres -f consulta_ejecucion_gasto.sql
 
@@ -17,5 +19,5 @@ Instrucciones:
    su postgres
    psql -d mef -f consulta_ejecucion_gasto.sql
 
-5. Configurar la cadena de conexión de los archivos departamentos.py, provincias3.py, distritos.py y ejecutar:
+6. Configurar la cadena de conexión de los archivos departamentos.py, provincias3.py, distritos.py y ejecutar:
    python .\apps\departamentos.py
