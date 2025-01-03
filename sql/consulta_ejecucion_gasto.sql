@@ -1,3 +1,6 @@
+CREATE SCHEMA mef
+    AUTHORIZATION postgres;
+
 CREATE TABLE IF NOT EXISTS mef.consulta_ejecucion_gasto
 (
 	id serial,
