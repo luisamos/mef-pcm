@@ -20,7 +20,7 @@ async def fetch(session, url):
 async def procesarProvincia(p):
     departamento = p[:2]
     provincia = p[2:4]
-    url = f'{URL_MEF}?_uhc=yes&0=&1=M&37=M&5={departamento}&6={provincia}&7=&y=2024&cpage=1&psize=400'
+    url = f'{URL_MEF}?_uhc=yes&0=&1=M&37=M&5={departamento}&6={provincia}&7=&y=2025&cpage=1&psize=400'
     
     async with aiohttp.ClientSession() as session:
         r = await fetch(session, url)
